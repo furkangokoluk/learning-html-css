@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div
+            {
+                border-style: solid;
+            }
+            #buyukkare
+            {
+                background-color: orange;
+                height: 200px;
+                width: 200px;
+                position: relative;
+                left: 300px;
+                top: 50px;
+            }
+            #kucukkare
+            {
+                background-color: blue;
+                height: 100px;
+                width: 100px;
+                position: fixed ;
+                right: 50px;
+                bottom: 50px;
+                box-shadow: 10px 10px 10px;
+            }
+            #dikdortgen
+            {
+                background-color: red;
+                height: 50px;
+                width: 100px;
+                position: absolute;
+                bottom: -25px;
+                left: 5px;
+                z-index: -1; 
+            }
+        </style>
+    </head>
+    <body>
+        <div id="buyukkare">
+            <div id="dikdortgen">
+            </div>
+        </div>
+        <div id="kucukkare">
+        </div>
+    </body>
+</html>

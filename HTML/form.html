@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Form Oluşturma</title>
+    </head>
+    <body>
+        <h1>Üye Kayıt Formu</h1>
+        <form name="kayit" action="kayit.php" method="get">
+            <table>
+                <tr>
+                    <td>Ad Soyad :</td>
+                    <td><input type="text" name="adsoyad" id="idadsoyad" size="20" maxlenght="30" required autofocus
+                         placeholder="Doldurulması zorunludur.."></td>
+                </tr>
+                <tr>
+                    <td>Yaş :</td>
+                    <td><input type="number" name="yas" id="idyas" required></td>
+                </tr>
+                <tr>
+                    <td>Email :</td> 
+                    <td><input type="email" name="email" id="idemail" required></td>
+                </tr>
+                <tr>
+                    <td>Web Sitesi :</td> 
+                    <td><input type="url" name="website" id="idwebsite"></td>
+                </tr>
+                <tr>
+                    <td>Biyografisi :</td> 
+                    <td><textarea name="biyografi" id="idbiyografi" cols="30" rows="5"></textarea></td>
+                </tr>
+            </table>
+            <br>
+            Doğum yeri :
+            <select name="dyeri">
+                <option>Adana</option>
+                <option>İzmir</option>
+                <option>İstanbul</option>
+                <option selected>Ankara</option>
+                <option>Bursa</option>
+            </select>
+
+            <br>
+            <br>
+            <input type="checkbox" name="Medeni">Evliyim
+            <br>
+            <input type="checkbox" name="Tecrübe">Tecrübem Var <br>
+            <br>
+            Bildiğiniz Yabancı Dil? <br>
+            <input type="radio" name="dil" value="ingilizce" checked>İngilizce
+            <input type="radio" name="dil" value="almanca">Almanca
+            <input type="radio" name="dil" value="rusca">Rusça
+            <br>
+            <br>
+            <input type="image" src="resimler/gönder.png" width="50"> 
+            <input type="reset">
+        </form>
+    </body>
+</html>
